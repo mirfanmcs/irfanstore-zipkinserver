@@ -1,0 +1,20 @@
+---
+applications:
+- name: irfanstore-zipkinserver
+  memory: 1G
+  instances: 1
+  random-route: false
+  timeout: 180
+  path: ./target/irfanstore-zipkinserver-1.0-SNAPSHOT.jar
+  services:
+    - ostore-rabbitmq
+
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+
+
+#Bind to the following services:
+
+# Rabbitmq (zipkin) (name: ostore-rabbitmq)
+
+

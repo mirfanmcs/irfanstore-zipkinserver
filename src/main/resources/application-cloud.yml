@@ -1,0 +1,34 @@
+
+spring:
+#  h2:
+#    console:
+#      enabled: true
+#      settings:
+#        web-allow-others: true
+  application:
+    name: irfanstore-zipkinserver
+  profiles:
+      active: cloud
+  rabbitmq:
+    addresses:  ${vcap.services.ostore-rabbitmq.credentials.uri}
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#  cloud:
+#    services:
+#      registrationMethod: route
+
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: 9411
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
