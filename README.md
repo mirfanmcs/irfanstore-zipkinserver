@@ -1,6 +1,6 @@
 irfanstore-zipkinserver
 =========================
-This is the sample Zipkin server written to run in the Pivital Cloud Foundry. Zipkin server collects and display the distributed tracing of the services emmitting the tracing logs in the Rabbit Stream. This application uses Spring Cloud Sleuth.
+This is the sample Zipkin server written to run in the Pivital Cloud Foundry. Zipkin server collects and display the distributed tracing of the services emitting the tracing logs in the Rabbit Stream. This application uses Spring Cloud Sleuth.
 
 This application uses following features / services in the Pivotal Cloud Foundry:
 
